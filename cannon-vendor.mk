@@ -15,8 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/apdb/APDB_MT6853_S01__W2145:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6853_S01__W2145 \
     vendor/xiaomi/cannon/proprietary/vendor/etc/apdb/APDB_MT6853_S01__W2145_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6853_S01__W2145_ENUM \
     vendor/xiaomi/cannon/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_ParamUnitDesc.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/HpImpedance_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_AudioParam.xml \
@@ -154,7 +152,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/camera/model/rt_model/segment_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/segment_model \
     vendor/xiaomi/cannon/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     vendor/xiaomi/cannon/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/device_sar_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_sar_config.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/dsi_panel_j22_42_02_0a_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_j22_42_02_0a_vdo_mi.xml \
@@ -201,8 +198,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
@@ -257,7 +252,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/cannon/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/xiaomi/cannon/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -502,7 +496,7 @@ PRODUCT_PACKAGES += \
     libgpu_aux \
     libgpud \
     libgpudataproducer \
-    libgralloc_extra \
+    libgralloc_extra_cannon_legacy \
     libgralloc_metadata \
     libgralloctypes_mtk \
     libgz_gp_client \
@@ -1195,7 +1189,6 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-common-cannon \
     com.nxp.sems-cannon \
     com.android.hotwordenrollment.common.util \
-    android.hardware.gnss@2.1-service-mediatek.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \

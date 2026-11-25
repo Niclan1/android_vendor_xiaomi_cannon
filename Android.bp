@@ -4156,7 +4156,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgralloc_extra",
+    name: "libgralloc_extra_cannon_legacy",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4164,7 +4164,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libgralloc_extra.so",
+                "proprietary/vendor/lib/libgralloc_extra_cannon_legacy.so",
             ],
             shared_libs: [
                 "libhardware",
@@ -4184,7 +4184,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libgralloc_extra.so",
+                "proprietary/vendor/lib64/libgralloc_extra_cannon_legacy.so",
             ],
             shared_libs: [
                 "libhardware",
@@ -26078,15 +26078,6 @@ dex_import {
         "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
     ],
     system_ext_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.gnss@2.1-service-mediatek.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
 }
 
 prebuilt_etc_xml {
